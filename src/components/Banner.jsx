@@ -3,8 +3,8 @@ import { Carousel } from 'react-bootstrap'
 
 const Banner = ({banner}) => {
   return (
-    <div>
-        <Carousel>
+    <div >
+        <Carousel >
            {
             banner.end.map((item,index)=>(
               <Carousel.Item>

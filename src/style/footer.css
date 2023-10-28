@@ -19,8 +19,11 @@
 display: flex;
 padding: 4vh;
 gap: 20vh;
+white-space: wrap;
+justify-content: space-between;
 background-color: rgb(220, 215, 215);
 align-items: center;
+
 }
 .pre-footer-second-input{
     display: flex;
@@ -38,6 +41,10 @@ align-items: center;
 .pre-footer-second-logo{
     display: flex;
     gap: 2vh;
+}
+.flex-pre-footer-first > p{
+    font-size: 15px;
+    white-space: wrap;
 }
 .pre-footer-second-logo svg{
     font-size:25px;
@@ -80,4 +87,93 @@ border-radius: 5px;
 .footer-chat-now:hover{
     color: white;
     border: 1px solid white;
+}
+.pre-footer-second-hide{
+    display: none;
+      }
+
+.mobile-view-show-option{
+    background-color:rgb(42, 41, 41);
+  color: white;
+ display: flex;
+    flex-direction: column;
+display: none;
+}
+.footer-mobile{
+    display: none;
+}
+.footer-mobile{
+    background-color:rgb(42, 41, 41);
+    color: white;
+}
+
+@media screen and (min-width:1005px) {
+    .pre-footer-second-hide{
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        justify-content: center;
+    }
+  
+}
+@media screen and (max-width:1005px) {
+      .footer-hide-option{
+        display: none;
+    }
+    .mobile-view-show-option{
+    display: flex;
+
+     
+    }
+    
+}
+@media screen and (max-width:857px) {
+    .footer-hide-about{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:772px) {
+    .pre-footer-second{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5vh;
+    }
+    .pre-footer-first{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:643px){
+    .hide-retail-store{
+        display: none;
+    }
+    .footer-pr{
+        width: auto;
+    }
+}
+@media screen and (max-width:447px){
+  .hide-shop-learn{
+    display: none;
+  }
+  .footer{
+    justify-content: center;
+ 
+  }
+}
+@media screen and (max-width:400px) {
+    .pre-footer-second-input-hide{
+      display: none;
+    }
+    .pre-footer-second{
+        white-space: normal;
+    }
+    .footer-mobile{
+        display: block;
+    }
+    .footer{
+        display: none;
+    }
+ 
 }

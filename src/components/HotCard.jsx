@@ -5,7 +5,7 @@ const HotCard = ({music,musicCover,smartDevice,smartDeviceCover,home,homeCover,l
    
   return (
     <div className='hot-card-pr'>
-        <div>
+        <div className='banner-hide-from-router'>
             <img style={{width:"100%"}} src={musicCover || smartDeviceCover || homeCover|| lifestyleCover || mobileAccessoriesCover} alt="logo" />
 
         </div>

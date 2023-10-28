@@ -1,10 +1,11 @@
 import Carousel from "react-bootstrap/Carousel";
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import "../style/slider.css";
 import { data } from "../data";
 function Slider({ start }) {
-  console.log(start);
+  
   return (
-    <Carousel>
+    <Carousel  className="width-full-slider">
       {start.map((item) => {
         console.log(item);
         return (

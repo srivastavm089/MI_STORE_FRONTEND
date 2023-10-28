@@ -1,10 +1,14 @@
 import React from 'react'
-import {BsArrowRepeat,BsShieldCheck,BsMap,BsFacebook, BsYoutube, BsInstagram, BsTwitter} from 'react-icons/bs';
-import '../style/footer.css'
+import {BsArrowRepeat,BsShieldCheck,BsMap,BsFacebook, BsYoutube, BsInstagram, BsTwitter, BsGlobe} from 'react-icons/bs';
+import '../style/footer.css';
+import {FaFacebookF} from 'react-icons/fa';
+import {RiTwitterXFill} from 'react-icons/ri'
+import {AiFillInstagram} from 'react-icons/ai'
+import {BiLogoPlayStore} from 'react-icons/bi'
 const Footer = ({footer}) => {
 console.log(footer)
   return (
-    <div>
+    <div className='footer-pr'>
 
 
         <div className='pre-footer'>
@@ -31,21 +35,24 @@ console.log(footer)
                 <p>Get updates on sales specials and more</p>
             </div>
             <div className='pre-footer-second-input'>
-              <input type="text" placeholder='Enter Email Address'/>
+              <input className='pre-footer-second-input-hide' type="text" placeholder='Enter Email Address'/>
               <span>Thanks.You're on our email list for spcial offers.</span>
             </div>
-            <div>
+            <div className='pre-footer-second-hide'>
                 <h1>FOLLOW MI</h1>
-                <p>We want to hear from you</p>
-            </div>
-            <div className='pre-footer-second-logo'>
+                <div className='pre-footer-second-logo'>
                 <BsFacebook/>
-                <BsYoutube/>
+               
                 <BsInstagram/>
                 <BsTwitter/>
             </div>
+            </div>
+          
         </div>
+        <div>
+      
         <div className='footer'>
+          
             <div className='footer-flex'>
                 <p>SUPPORT</p>
                 {
@@ -54,7 +61,7 @@ console.log(footer)
                     ))
                 }
             </div>
-            <div className='footer-flex'>
+            <div className='footer-flex hide-shop-learn'>
                 <p>SHOP AND LEARN</p>
                 {
                   footer.shopAndLearn.map((item)=>(
@@ -62,7 +69,7 @@ console.log(footer)
                   ))
                 }
             </div>
-            <div className='footer-flex'>
+            <div className='footer-flex hide-retail-store'>
                 <p>RETAIL STORE</p>
                 {
                     footer.retailStore.map((item)=>(
@@ -70,7 +77,7 @@ console.log(footer)
                     ))
                 }
             </div>
-            <div className='footer-flex'>
+            <div className='footer-flex footer-hide-about'>
                 <p>ABOUT</p>
                 {
                     footer.aboutUS.map((item)=>(
@@ -79,7 +86,7 @@ console.log(footer)
 
                 }
             </div>
-            <div className='footer-flex'>
+            <div className='footer-flex footer-hide-option'>
                 <p>CONTACT US</p>
                 {
                     footer.contactUs.map((item)=>(
@@ -88,10 +95,38 @@ console.log(footer)
 
                 }
             </div>
-            <div className='footer-flex'>
-                <p>Chat with our Virtual AI Bot <br />(24/7 Live Agent Support)</p>
-                <button className='footer-chat-now'>CHAT NOW</button>
+          
+        </div>
+        <div className='footer-mobile'>
+            <div style={{display:'flex', flexDirection:'column', gap:'3vh', padding:'1vh'}}>
+                <h1>Follow Mi</h1>
+                <div style={{display:'flex', gap:'5vh'}}>
+                <FaFacebookF/>
+               <RiTwitterXFill/>
+                   <AiFillInstagram/>
+
+                </div>
             </div>
+            <div style={{marginTop:'1vh', display:'flex', flexDirection:'column', gap:'3vh'}}>
+                <h1 style={{paddingLeft:'1vh'}}>Let's Stay in touch</h1>
+                <input style={{background:'black',marginLeft:"1vh", border:"1px solid white", outline:'none', width:'90%', borderRadius:'10px', paddingLeft:'1vh'}} type="text" placeholder='Enter email address' />
+            </div>
+            <div style={{marginTop:'2vh', display:'flex', flexDirection:'column', gap:'3vh'}}>
+                <h1 style={{paddingLeft:'1vh'}}>Get mi store app</h1>
+                <p style={{background:'white',display:"flex", alignItems:"center", gap:'10vw', color:"black", width:'90%', paddingLeft:'2vh', marginLeft:'1vh', borderRadius:'10px'}}><BiLogoPlayStore/>Download on Google play</p>
+            </div>
+            <div style={{marginTop:"2vh",display:'flex', flexDirection:'column', gap:'1vh', paddingLeft:'1vh'}}>
+                <p>Sitemap</p>
+                <p style={{display:'flex', gap:'1vh', alignItems:"center"}}>India / india <BsGlobe/></p>
+
+            </div>
+           <hr />
+            <div>
+                <p style={{opacity:"0.5", fontSize:'16px'}}>
+                    Copyright © 2010 - 2023 Xiaomi. All Rights Reserved
+                </p>
+            </div>
+        </div>
         </div>
 
 

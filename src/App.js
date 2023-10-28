@@ -1,5 +1,5 @@
 import React from "react";
-import PreNavbar from "./components/PreNavbar";
+
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
@@ -15,7 +15,7 @@ const App = () => {
   console.log(data.hotAccessories);
   return (
     <div>
-      <PreNavbar />
+   
       <Navbar data={data} />
   
       <Home />

@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/navbarcard.css";
-import SmoothRender from 'react-smooth-render';
+import SmoothRender from 'react-smooth-render'; 
 const NavCard = ({ price, image, name, index }) => {
  
 

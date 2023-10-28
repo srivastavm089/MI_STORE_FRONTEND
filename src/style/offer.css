@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1vmax;
+    gap: 1vh;
 }
 .offer-section img{
     margin: 0 1vmax;
@@ -10,4 +10,14 @@
 }
 .offer-section img:hover{
 box-shadow: 6px 6px 15px rgba(53,53,53,0.363);
+}
+@media screen and (max-width:434px) {
+    .offer-section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1vh;
+    }
+    .offer-card-response{
+        width:100vw;
+    }
 }
