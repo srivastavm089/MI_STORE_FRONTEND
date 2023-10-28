@@ -1,0 +1,31 @@
+.pre-nav-pr{
+display: grid;
+grid-template-columns: 5fr 2fr;
+background-color: black;
+color: white;
+padding: 1vh;
+
+}
+.pre-nav-pr > div{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+.pre-nav-pr > div >a{
+    color: rgb(119, 117, 117);
+}
+.pre-nav-pr > div > span{
+    color:  rgb(119, 117, 117);
+}
+.pre-nav-pr > div >a:hover{
+    color: white;
+    transition: all 1s;
+}
+
+
+.pre-nav-second a{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+
+}

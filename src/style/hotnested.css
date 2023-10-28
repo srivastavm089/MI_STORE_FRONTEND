@@ -1,0 +1,22 @@
+
+.nestedHotPr{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 50vh;
+    justify-content: center;
+    align-items: center;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+.nestedHotPr:hover{
+    box-shadow: 6px 6px 12px rgba(56, 56, 56, 0.25);
+
+}
+
+.hot-img{
+    width: 225px;
+}
+.hot-price{
+    color: orangered;
+}

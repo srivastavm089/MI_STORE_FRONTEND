@@ -1,0 +1,15 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  gap: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+}
+.heading div{
+    height: 1px;
+    width: 30vw;
+    background-color: rgb(144, 142, 142);
+
+}

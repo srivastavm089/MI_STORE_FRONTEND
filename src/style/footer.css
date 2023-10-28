@@ -1,0 +1,83 @@
+.pre-footer-first{
+    display: flex;
+    gap: 10vh;
+    justify-content: center;
+    font-size: larger;
+    padding: 2vh;
+
+}
+.flex-pre-footer-first{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+.pre-footer-logo{
+    font-size: 50px;
+    opacity: 0.5;
+}
+.pre-footer-second{
+display: flex;
+padding: 4vh;
+gap: 20vh;
+background-color: rgb(220, 215, 215);
+align-items: center;
+}
+.pre-footer-second-input{
+    display: flex;
+    flex-direction: column;
+}
+.pre-footer-second-input input{
+   border: 1px solid rgb(189, 187, 187);
+   outline: none;
+   min-height: 5vh;
+   border-radius: 5px;
+   padding-left: 2vh;
+ 
+
+}
+.pre-footer-second-logo{
+    display: flex;
+    gap: 2vh;
+}
+.pre-footer-second-logo svg{
+    font-size:25px;
+    opacity: 0.5;
+}
+.footer{
+    display: flex;
+   justify-content: flex-start;
+ gap: 8vh;
+   padding: 10vh;
+    background-color:rgb(42, 41, 41);
+ 
+    color: gray;
+
+}
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+.footer-chat-now{
+    border: 1px solid gray;
+    padding: 1vh;
+color: gray;
+}
+.footer-list{
+    transition: all 1s;
+    cursor: pointer;
+}
+.footer-list:hover{
+    color: white;
+    transition: all 1s;
+}
+.footer-chat-now{
+transition: all 1s;
+border-radius: 5px;
+}
+.footer-chat-now:hover{
+    color: white;
+    border: 1px solid white;
+}

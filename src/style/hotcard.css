@@ -1,0 +1,12 @@
+.hot-card-pr {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+ margin-top: 5vh;
+  background-color: white;
+}
+.hotCard-second {
+  display: flex;
+  gap: 1vh;
+  flex-wrap: wrap;
+
+}

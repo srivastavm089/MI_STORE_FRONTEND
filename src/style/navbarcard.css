@@ -1,0 +1,13 @@
+.navbar-click-image{
+    width: 150px;
+}
+.nav-price{
+    color: orangered;
+}
+.navbar-product-pr{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding-bottom: 2vh;
+
+}
